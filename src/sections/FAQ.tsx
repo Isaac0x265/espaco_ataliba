@@ -26,7 +26,7 @@ export const FAQ: React.FC = () => {
     },
     {
       question: 'Como funciona a reserva e o pagamento?',
-      answer: 'Para reservar, entre em contato conosco pelo WhatsApp ou telefone. Solicitamos 30% de sinal para confirmar a data e o restante pode ser pago até o dia do evento. Aceitamos PIX, cartão e dinheiro.'
+      answer: 'Para reservar, entre em contato conosco pelo WhatsApp ou telefone. Solicitamos 50% de sinal para confirmar a data e o restante pode ser pago até o dia do evento. Aceitamos PIX, cartão e dinheiro.'
     },
     {
       question: 'Posso cancelar ou remarcar meu evento?',

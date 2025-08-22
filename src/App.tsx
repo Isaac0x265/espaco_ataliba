@@ -10,7 +10,7 @@ import { TiposEventos } from './sections/TiposEventos';
 import { Galeria } from './sections/Galeria';
 import { Localizacao } from './sections/Localizacao';
 import { FAQ } from './sections/FAQ';
-import { Contato } from './sections/Contato';
+
 import { CTAFinal } from './sections/CTAFinal';
 import { useAppLoading } from './hooks/useAppLoading';
 
@@ -34,7 +34,7 @@ function App() {
         <TiposEventos />
         <Localizacao />
         <FAQ />
-        <Contato />
+
         <CTAFinal />
       </main>
       

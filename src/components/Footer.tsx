@@ -55,12 +55,7 @@ export const Footer: React.FC = () => {
                 >
                   💬 WhatsApp
                 </a>
-                <button 
-                  onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="block text-gray-400 hover:text-white transition-colors text-left"
-                >
-                  📋 Solicitar Orçamento
-                </button>
+
                 <button 
                   onClick={() => document.getElementById('galeria')?.scrollIntoView({ behavior: 'smooth' })}
                   className="block text-gray-400 hover:text-white transition-colors text-left"
@@ -86,7 +81,7 @@ export const Footer: React.FC = () => {
             </div>
             
             <div className="flex items-center space-x-6 text-sm text-gray-400">
-              <span>Desenvolvido com ❤️ para eventos especiais</span>
+              <span>Desenvolvido por: @isaac.ataliba ❤️</span>
             </div>
           </div>
         </div>

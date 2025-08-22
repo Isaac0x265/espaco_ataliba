@@ -18,7 +18,7 @@ export const Header: React.FC = () => {
   };
   
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="bg-warm-50/95 backdrop-blur-sm shadow-sm sticky top-0 z-50">
       <div className="container-custom">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
@@ -26,7 +26,7 @@ export const Header: React.FC = () => {
             <div className="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-xl">EA</span>
             </div>
-            <span className="ml-3 text-xl font-bold text-gray-900">
+            <span className="ml-3 text-xl font-bold text-neutral-900">
               Espaço Ataliba
             </span>
           </div>
@@ -35,34 +35,29 @@ export const Header: React.FC = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => scrollToSection('sobre')}
-              className="text-gray-700 hover:text-primary-600 transition-colors"
+              className="text-neutral-700 hover:text-primary-600 transition-colors"
             >
               Sobre
             </button>
             <button
               onClick={() => scrollToSection('infraestrutura')}
-              className="text-gray-700 hover:text-primary-600 transition-colors"
+              className="text-neutral-700 hover:text-primary-600 transition-colors"
             >
               Infraestrutura
             </button>
             <button
               onClick={() => scrollToSection('galeria')}
-              className="text-gray-700 hover:text-primary-600 transition-colors"
+              className="text-neutral-700 hover:text-primary-600 transition-colors"
             >
               Galeria
             </button>
             <button
               onClick={() => scrollToSection('localizacao')}
-              className="text-gray-700 hover:text-primary-600 transition-colors"
+              className="text-neutral-700 hover:text-primary-600 transition-colors"
             >
               Localização
             </button>
-            <button
-              onClick={() => scrollToSection('contato')}
-              className="text-gray-700 hover:text-primary-600 transition-colors"
-            >
-              Contato
-            </button>
+
           </nav>
           
           {/* CTA Button */}
@@ -80,7 +75,7 @@ export const Header: React.FC = () => {
           {/* Mobile menu button */}
           <button
             onClick={toggleMenu}
-            className="md:hidden p-2 rounded-md text-gray-700 hover:text-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500"
+            className="md:hidden p-2 rounded-md text-neutral-700 hover:text-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500"
             aria-label="Abrir menu"
             aria-expanded={isMenuOpen}
           >
@@ -96,38 +91,33 @@ export const Header: React.FC = () => {
         
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden border-t border-gray-200 py-4">
+          <div className="md:hidden border-t border-neutral-200 py-4">
             <nav className="flex flex-col space-y-4">
               <button
                 onClick={() => scrollToSection('sobre')}
-                className="text-left text-gray-700 hover:text-primary-600 transition-colors py-2"
+                className="text-left text-neutral-700 hover:text-primary-600 transition-colors py-2"
               >
                 Sobre
               </button>
               <button
                 onClick={() => scrollToSection('infraestrutura')}
-                className="text-left text-gray-700 hover:text-primary-600 transition-colors py-2"
+                className="text-left text-neutral-700 hover:text-primary-600 transition-colors py-2"
               >
                 Infraestrutura
               </button>
               <button
                 onClick={() => scrollToSection('galeria')}
-                className="text-left text-gray-700 hover:text-primary-600 transition-colors py-2"
+                className="text-left text-neutral-700 hover:text-primary-600 transition-colors py-2"
               >
                 Galeria
               </button>
               <button
                 onClick={() => scrollToSection('localizacao')}
-                className="text-left text-gray-700 hover:text-primary-600 transition-colors py-2"
+                className="text-left text-neutral-700 hover:text-primary-600 transition-colors py-2"
               >
                 Localização
               </button>
-              <button
-                onClick={() => scrollToSection('contato')}
-                className="text-left text-gray-700 hover:text-primary-600 transition-colors py-2"
-              >
-                Contato
-              </button>
+
               <div className="pt-2">
                 <Button
                   variant="whatsapp"
