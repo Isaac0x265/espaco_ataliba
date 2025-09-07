@@ -12,7 +12,6 @@ export const Localizacao: React.FC = () => {
   };
   
   const fullAddress = `${address.street}, ${address.neighborhood}, ${address.city} - ${address.state}, ${address.zipCode}`;
-  const mapsUrl = `https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=${encodeURIComponent(fullAddress)}`;
   
   return (
     <Section id="localizacao" background="white">

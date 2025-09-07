@@ -32,7 +32,7 @@ export const useAppLoading = () => {
         ];
 
         const imagePromises = criticalImages.map(src => {
-          return new Promise((resolve, reject) => {
+          return new Promise((resolve) => {
             const img = new Image();
             img.onload = resolve;
             img.onerror = resolve; // Don't fail if image doesn't exist
